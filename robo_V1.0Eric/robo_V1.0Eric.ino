@@ -43,43 +43,43 @@ void verificaComandoCelular(){
     Serial.println(buf);  
 
     // Frente
-    if (buf == 'w'){
+    if (buf == 'F'){
       Motor1.Forward();
       Motor2.Forward();
     }
 
     // Ré no kibe
-    if (buf == 's'){
+    if (buf == 'B'){
       Motor1.Backward();
       Motor2.Backward();
     }
 
     // Esquerda frente
-    if (buf == 'a'){
+    if (buf == 'L'){
       Motor1.Forward();
       Motor2.Stop();
     }
 
     // Direita frente
-    if (buf == 'd'){
+    if (buf == 'R'){
       Motor2.Forward();
       Motor1.Stop();
     }
 
     // Esquerda trás 
-    if (buf == 'z'){
+    if (buf == 'I'){
       Motor1.Backward();
       Motor2.Stop();
     }
 
     // Direita trás 
-    if (buf == 'c'){
+    if (buf == 'J'){
       Motor2.Backward();
       Motor1.Stop();
     }
 
     // Parar
-    if (buf == 'x'){
+    if (buf == 'S'){
       Motor1.Stop();
       Motor2.Stop();
     }
